@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Week 2 – Analysing YouTube's User Experience",
+    "image": "images/pic01.jpg",
+    "alt": "Week 2 reflection",
+    "type": "reflection",
+    "content": "assets/reflections/week-02.html"
+  },
+  {
+    "title": "Week 2 – Workshop Task",
+    "image": "images/pic02.jpg",
+    "alt": "Week 2 workshop task",
+    "type": "task",
+    "content": "assets/tasks/week-02.html"
+  },
+  {
+    "title": "Week 3 – Reflection",
+    "image": "images/pic03.jpg",
+    "alt": "Week 3 reflection",
+    "type": "reflection",
+    "content": "assets/reflections/week-03.html"
+  }
+]
