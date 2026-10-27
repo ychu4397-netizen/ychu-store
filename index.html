@@ -2,15 +2,77 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <title>Ke Shao | Digital Media Portfolio</title>
+    <title>Ke Shao | My Little Digital World</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
 
     <style>
+        /* Welcome message */
+        .welcome-note {
+            font-size: 1.1em;
+            line-height: 1.9;
+        }
+
+        /* About section */
+        .about-intro {
+            font-size: 1.05em;
+            line-height: 1.9;
+        }
+
+        .interest-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            margin: 1.5em 0;
+        }
+
+        .interest-card {
+            padding: 1em;
+            background: #f7f5f2;
+            border-radius: 8px;
+            color: #444;
+        }
+
+        .interest-card .emoji {
+            display: block;
+            font-size: 1.7em;
+            margin-bottom: .4em;
+        }
+
+        .interest-card strong {
+            display: block;
+            margin-bottom: .35em;
+        }
+
+        .interest-card p {
+            margin: 0;
+            font-size: .9em;
+        }
+
+        .secret-box {
+            margin-top: 1.5em;
+            padding: 1.2em;
+            border: 1px dashed #b8a58b;
+            border-radius: 8px;
+            background: #fffdf8;
+        }
+
+        .secret-box summary {
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .secret-content {
+            padding-top: 1em;
+            line-height: 1.8;
+        }
+
+        /* Portfolio cards */
         .work-card {
             margin-bottom: 2em;
             min-width: 0;
@@ -36,9 +98,9 @@
 
         .work-card-title {
             display: block;
-            margin-top: 0.8em;
+            margin-top: .8em;
             text-align: center;
-            font-size: 0.95em;
+            font-size: .95em;
             line-height: 1.5;
             color: #444;
             overflow-wrap: anywhere;
@@ -48,22 +110,22 @@
             color: #2767a8;
         }
 
+        .work-card[open] .work-card-title {
+            font-weight: 600;
+        }
+
         .work-card-content {
-            padding: 1.5em 0.5em;
+            padding: 1.5em .5em;
             line-height: 1.8;
             overflow-wrap: anywhere;
         }
 
         .work-card-content h3 {
-            margin-bottom: 0.8em;
+            margin-bottom: .8em;
         }
 
         .work-card-content p {
             margin-bottom: 1em;
-        }
-
-        .work-card[open] .work-card-title {
-            font-weight: 600;
         }
 
         .work-card-preview:focus-visible {
@@ -72,11 +134,27 @@
         }
 
         .portfolio-status {
-            padding: 1em;
+            padding: .8em 1em;
             border-radius: 4px;
             background: #f5f5f5;
             color: #555;
             margin: 1em 0;
+            font-size: .9em;
+        }
+
+        .portfolio-status[hidden] {
+            display: none;
+        }
+
+        .small-note {
+            font-size: .9em;
+            color: #777;
+        }
+
+        @media screen and (max-width: 480px) {
+            .interest-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -90,90 +168,150 @@
         <a href="#home" class="icon solid fa-home">
             <span>Home</span>
         </a>
+
         <a href="#about" class="icon solid fa-user">
             <span>About</span>
         </a>
+
         <a href="#work" class="icon solid fa-folder">
             <span>Work</span>
         </a>
+
         <a href="#contact" class="icon solid fa-envelope">
             <span>Contact</span>
         </a>
     </nav>
 
-    <!-- Main -->
     <div id="main">
 
-        <!-- Home -->
+        <!-- HOME -->
         <article id="home" class="panel intro">
             <header>
                 <h1>Ke Shao</h1>
-                <p>Digital Media Student | Exploring Digital Culture</p>
+                <p>Welcome to my website!</p>
+                <p class="welcome-note">
+                    A little space for my learning, ideas, and digital discoveries.
+                    Click the arrow on the right to explore my work.
+                </p>
             </header>
 
             <a href="#work" class="jumplink pic">
                 <span class="arrow icon solid fa-chevron-right">
-                    <span>See my work</span>
+                    <span>Explore my work</span>
                 </span>
                 <img src="images/cat-profile.jpg"
                      alt="A golden cat with green eyes" />
             </a>
         </article>
 
-        <!-- About Me -->
+        <!-- ABOUT ME -->
         <article id="about" class="panel">
             <header>
-                <h2>About Me</h2>
+                <h2>A Little About Me</h2>
             </header>
 
-            <h3>Introduction</h3>
-            <p>
-                I am a student exploring digital media and the role of
-                digital technologies in everyday life.
+            <p class="about-intro">
+                Hi! I'm Ke Shao, a digital media student learning to look at
+                the online world a little more critically. I'm interested in
+                how websites, platforms, and algorithms influence what we see,
+                what we think, and how we connect with other people.
             </p>
 
-            <h3>Academic Interests</h3>
             <p>
-                I am interested in how digital platforms shape the ways
-                people communicate and interact.
+                This website is my little corner of the internet: part learning
+                diary, part experiment, and part collection of things I've
+                discovered along the way.
             </p>
 
-            <h3>Skills &amp; Exploration</h3>
+            <h3>Things I Like Exploring</h3>
+
+            <div class="interest-grid">
+                <div class="interest-card">
+                    <span class="emoji">🔎</span>
+                    <strong>Digital Curiosity</strong>
+                    <p>
+                        Looking behind the screen and asking why digital
+                        platforms work the way they do.
+                    </p>
+                </div>
+
+                <div class="interest-card">
+                    <span class="emoji">🎨</span>
+                    <strong>Design &amp; Creativity</strong>
+                    <p>
+                        Exploring colours, layouts, visual ideas, and
+                        small details that make a website feel special.
+                    </p>
+                </div>
+
+                <div class="interest-card">
+                    <span class="emoji">🐈</span>
+                    <strong>Cat Appreciation</strong>
+                    <p>
+                        Because a little cat energy makes almost any
+                        project better.
+                    </p>
+                </div>
+
+                <div class="interest-card">
+                    <span class="emoji">📚</span>
+                    <strong>Learning by Doing</strong>
+                    <p>
+                        Trying things, making mistakes, and gradually
+                        figuring out how they work.
+                    </p>
+                </div>
+            </div>
+
+            <h3>My Current Quest</h3>
             <p>
-                Through this portfolio, I am developing my understanding
-                of website design and digital content.
+                I'm working on connecting ideas from digital media theory
+                with real online experiences, while improving my website
+                design and analytical skills one project at a time.
             </p>
 
-            <h3>Learning Goals</h3>
-            <p>
-                My goal is to develop my critical thinking skills and
-                connect theoretical ideas with everyday digital experiences.
-            </p>
+            <details class="secret-box">
+                <summary>🤫 A little secret — click to reveal</summary>
+                <div class="secret-content">
+                    <p>
+                        You've found the hidden corner of my website!
+                    </p>
+                    <p>
+                        This portfolio is still growing, just like my skills.
+                        Some pages may look polished, some may be experiments,
+                        and some may change completely later. That's part of
+                        the fun: learning doesn't have to be a finished product.
+                    </p>
+                    <p>
+                        <strong>Current motto:</strong> Stay curious, keep
+                        experimenting, and don't be afraid to start small.
+                    </p>
+                </div>
+            </details>
         </article>
 
-        <!-- Portfolio: reflections and tasks together -->
+        <!-- PORTFOLIO -->
         <article id="work" class="panel">
             <header>
-                <h2>Portfolio</h2>
+                <h2>My Work</h2>
             </header>
 
             <p>
-                Welcome to my portfolio. This space documents my learning
-                journey in digital media, including workshop activities,
-                critical reflections, and creative experiments in website
-                design. Through these projects, I explore how digital
-                technologies shape everyday experiences.
+                Welcome to my learning archive. Here you'll find weekly
+                reflections, workshop tasks, and other projects from my
+                digital media journey.
             </p>
 
             <p>
-                Select an image or its title to explore the task or reflection.
+                Click any image or title to open its content.
+                I'll keep adding new work as the semester progresses.
             </p>
 
             <div id="portfolio-status"
                  class="portfolio-status"
                  role="status"
                  aria-live="polite">
-                Loading portfolio items...
+                Loading my work...
             </div>
 
             <section>
@@ -181,11 +319,16 @@
             </section>
         </article>
 
-        <!-- Contact -->
+        <!-- CONTACT -->
         <article id="contact" class="panel">
             <header>
-                <h2>Contact Me</h2>
+                <h2>Say Hello</h2>
             </header>
+
+            <p>
+                Thanks for visiting my little corner of the internet!
+                You can use the form below to get in touch.
+            </p>
 
             <form action="#" method="post">
                 <div>
@@ -197,7 +340,7 @@
                         </div>
 
                         <div class="col-6 col-12-medium">
-                            <input type="text"
+                            <input type="email"
                                    name="email"
                                    placeholder="Email" />
                         </div>
@@ -221,6 +364,11 @@
                     </div>
                 </div>
             </form>
+
+            <p class="small-note">
+                This contact form is a visual template and will need a
+                form service or backend to send messages.
+            </p>
         </article>
 
     </div>
@@ -238,14 +386,14 @@
 
 </div>
 
-<!-- Scripts -->
+<!-- Existing Astral scripts -->
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/browser.min.js"></script>
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
 
-<!-- Dynamically load portfolio items from assets/work.json -->
+<!-- Portfolio loader -->
 <script>
 (function () {
     "use strict";
@@ -253,16 +401,42 @@
     const grid = document.getElementById("portfolio-grid");
     const status = document.getElementById("portfolio-status");
 
+    /*
+     * These fallback cards let the page display something even if
+     * assets/work.json has not been uploaded successfully yet.
+     * Once work.json loads, its contents replace this list.
+     */
+    const fallbackItems = [
+        {
+            title: "Week 2 – Analysing YouTube's User Experience",
+            image: "images/pic01.jpg",
+            alt: "Week 2 reflection",
+            content: "assets/reflections/week-02.html"
+        },
+        {
+            title: "Week 2 – Workshop Task",
+            image: "images/pic02.jpg",
+            alt: "Week 2 workshop task",
+            content: "assets/tasks/week-02.html"
+        },
+        {
+            title: "Week 3 – Reflection",
+            image: "images/pic03.jpg",
+            alt: "Week 3 reflection",
+            content: "assets/reflections/week-03.html"
+        }
+    ];
+
     function escapeHtml(value) {
         return String(value == null ? "" : value).replace(/[&<>"']/g,
-            function (char) {
+            function (character) {
                 return {
                     "&": "&amp;",
                     "<": "&lt;",
                     ">": "&gt;",
                     '"': "&quot;",
                     "'": "&#39;"
-                }[char];
+                }[character];
             }
         );
     }
@@ -271,6 +445,7 @@
         const title = escapeHtml(
             item.title || ("Portfolio item " + (index + 1))
         );
+
         const image = escapeHtml(item.image || "images/pic01.jpg");
         const alt = escapeHtml(item.alt || item.title || "Portfolio work");
         const contentPath = String(item.content || "");
@@ -281,17 +456,21 @@
         column.innerHTML = `
             <details class="work-card">
                 <summary class="work-card-preview">
-                    <img src="${image}" alt="${alt}" loading="lazy" />
+                    <img src="${image}"
+                         alt="${alt}"
+                         loading="lazy" />
                     <span class="work-card-title">${title}</span>
                 </summary>
+
                 <div class="work-card-content">
-                    <p class="portfolio-status">Open to load content...</p>
+                    <p>Open this card to load its content.</p>
                 </div>
             </details>
         `;
 
         const details = column.querySelector("details");
         const contentBox = column.querySelector(".work-card-content");
+
         let loaded = false;
         let loading = false;
 
@@ -302,8 +481,7 @@
 
             if (!contentPath) {
                 contentBox.innerHTML =
-                    "<p>No content file has been set for this item yet. " +
-                    "Add its path in <code>assets/work.json</code>.</p>";
+                    "<p>No content file has been configured for this item yet.</p>";
                 loaded = true;
                 return;
             }
@@ -321,12 +499,12 @@
                 const html = await response.text();
                 contentBox.innerHTML = html;
                 loaded = true;
+
             } catch (error) {
                 contentBox.innerHTML =
-                    "<p>Unable to load this content file. Please check that " +
-                    "<code>" + escapeHtml(contentPath) +
-                    "</code> exists in your GitHub repository and that the " +
-                    "path is correct.</p>";
+                    "<p>Sorry, this content could not be loaded. Please check " +
+                    "that <code>" + escapeHtml(contentPath) +
+                    "</code> exists in your repository.</p>";
             } finally {
                 loading = false;
             }
@@ -335,32 +513,48 @@
         return column;
     }
 
+    function renderItems(items) {
+        grid.innerHTML = "";
+
+        items.forEach(function (item, index) {
+            grid.appendChild(createCard(item, index));
+        });
+    }
+
     async function loadPortfolio() {
         try {
-            const response = await fetch("assets/work.json");
+            /*
+             * Resolve the JSON path relative to the current website URL.
+             * This supports project sites such as /ychu-store/.
+             */
+            const jsonUrl = new URL("assets/work.json", window.location.href);
+            const response = await fetch(jsonUrl.href, { cache: "no-store" });
 
             if (!response.ok) {
-                throw new Error("Could not load assets/work.json");
+                throw new Error("Could not load work.json");
             }
 
             const items = await response.json();
 
             if (!Array.isArray(items) || items.length === 0) {
-                status.textContent =
-                    "No portfolio items found. Add entries to assets/work.json.";
-                return;
+                throw new Error("work.json must contain a non-empty JSON array");
             }
 
-            items.forEach(function (item, index) {
-                grid.appendChild(createCard(item, index));
-            });
-
+            renderItems(items);
             status.hidden = true;
+
         } catch (error) {
+            /*
+             * Do not leave the entire portfolio blank if JSON is missing.
+             * Show fallback cards and explain how to fix the data file.
+             */
+            renderItems(fallbackItems);
+
             status.textContent =
-                "Portfolio items could not be loaded. Please make sure " +
-                "assets/work.json has been uploaded and contains valid JSON. " +
-                "Test the page through GitHub Pages.";
+                "Showing starter items because assets/work.json could not be loaded. " +
+                "Check that the file exists in the assets folder and has valid JSON.";
+
+            status.hidden = false;
         }
     }
 
@@ -370,4 +564,3 @@
 
 </body>
 </html>
-
