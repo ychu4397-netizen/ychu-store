@@ -1,251 +1,373 @@
+
 <!DOCTYPE HTML>
-<!--
-	Astral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Astral by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<html lang="en">
+<head>
+    <title>Ke Shao | Digital Media Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
 
-		<!-- Wrapper-->
-			<div id="wrapper">
+    <style>
+        .work-card {
+            margin-bottom: 2em;
+            min-width: 0;
+        }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<a href="#" class="icon solid fa-home"><span>Home</span></a>
-						<a href="#about" class="icon solid fa-user"><span>About</span></a>
-						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
-						<a href="#reflections" class="icon solid fa-book"><span>Reflections</span></a>
-						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
-						<a href="https://twitter.com/ajlkn" class="icon brands fa-twitter"><span>Twitter</span></a>
-					</nav>
+        .work-card-preview {
+            display: block;
+            cursor: pointer;
+            list-style: none;
+        }
 
-				<!-- Main -->
-					<div id="main">
+        .work-card-preview::-webkit-details-marker {
+            display: none;
+        }
 
-						<!-- Me -->
-							<article id="home" class="panel intro">
-								<header>
-									<h1>Ke Shao</h1>
-									<p>Digital Media Student | Exploring Digital Culture</p>
-								</header>
-								<a href="#work" class="jumplink pic">
-    <span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-    <img src="images/cat-profile.jpg" alt="A golden cat with green eyes" />
-</a>
-							</article>
-							<!-- About Me -->
-<article id="about" class="panel">
-    <header>
-        <h2>About Me</h2>
-    </header>
+        .work-card-preview img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            border-radius: 4px;
+        }
 
-    <h3>Introduction</h3>
-    <p>
-        I am a student exploring digital media and
-        the role of digital technologies in everyday life.
-    </p>
+        .work-card-title {
+            display: block;
+            margin-top: 0.8em;
+            text-align: center;
+            font-size: 0.95em;
+            line-height: 1.5;
+            color: #444;
+            overflow-wrap: anywhere;
+        }
 
-    <h3>Academic Interests</h3>
-    <p>
-        I am interested in how digital platforms shape
-        the ways people communicate and interact.
-    </p>
+        .work-card-preview:hover .work-card-title {
+            color: #2767a8;
+        }
 
-    <h3>Skills & Exploration</h3>
-    <p>
-        Through this portfolio, I am developing my
-        understanding of website design and digital content.
-    </p>
+        .work-card-content {
+            padding: 1.5em 0.5em;
+            line-height: 1.8;
+            overflow-wrap: anywhere;
+        }
 
-    <h3>Learning Goals</h3>
-    <p>
-        My goal is to develop my critical thinking skills
-        and connect theoretical ideas with everyday
-        digital experiences.
-    </p>
-</article>
+        .work-card-content h3 {
+            margin-bottom: 0.8em;
+        }
 
-						<!-- Work -->
-							<article id="work" class="panel">
-								<header>
-									<h2>Portfolio</h2>
-								</header>
-								<p>
-									Welcome to my portfolio. This space documents my learning
-    journey in digital media, including workshop activities,
-    critical reflections, and creative experiments in website
-    design. Through these projects, I explore how digital
-    technologies shape everyday experiences.
-								</p>
-								<section>
-									<div class="row">
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
-										</div>
-									</div>
-								</section>
-							</article>
-<!-- Weekly Reflections -->
-<article id="reflections" class="panel">
-    <header>
-        <h2>Weekly Reflections</h2>
-    </header>
+        .work-card-content p {
+            margin-bottom: 1em;
+        }
 
-    <p>
-        This section documents my weekly learning journey through workshop activities,
-        critical reflections, and connections with course readings and lectures.
-    </p>
+        .work-card[open] .work-card-title {
+            font-weight: 600;
+        }
 
-    <section>
-        <h3>Week 2: Analysing YouTube's User Experience</h3>
+        .work-card-preview:focus-visible {
+            outline: 2px solid #2767a8;
+            outline-offset: 4px;
+        }
 
-        <p>
-            One website I use regularly is YouTube. In my experience, one of its main
-            strengths is its powerful search functionality. The keyword suggestions make
-            it easier to find relevant videos, even when I do not know their exact titles.
-            The website also presents video lists and comments in a relatively clear way,
-            helping users explore content and interact with others.
-        </p>
+        .portfolio-status {
+            padding: 1em;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #555;
+            margin: 1em 0;
+        }
+    </style>
+</head>
 
-        <p>
-            However, I sometimes find YouTube's interface visually overwhelming. As a
-            video-sharing platform, it presents a large amount of content through thumbnails,
-            titles and other visual elements. Many thumbnails use striking images and colours
-            to attract attention. Although this can make videos more noticeable, it can also
-            make it difficult for users to concentrate on their original goals. For example,
-            someone who visits YouTube to find a particular educational video may become
-            distracted by other content.
-        </p>
+<body class="is-preload">
 
-        <p>
-            This observation made me think about the relationship between visual design and
-            attention. A website can provide a great deal of information, but more content
-            does not necessarily create a better user experience. In my view, effective design
-            should establish a clear visual hierarchy so that users can identify the most
-            important information without feeling overwhelmed.
-        </p>
+<div id="wrapper">
 
-        <p>
-            This also connects to Gillespie's (2013) discussion of how algorithms determine
-            the relevance of information. Search suggestions and content recommendations can
-            influence how users discover and engage with content. Although these features can
-            make a platform more convenient, it is also worth considering how the organisation
-            and presentation of information shape users' experiences.
-        </p>
+    <!-- Navigation -->
+    <nav id="nav">
+        <a href="#home" class="icon solid fa-home">
+            <span>Home</span>
+        </a>
+        <a href="#about" class="icon solid fa-user">
+            <span>About</span>
+        </a>
+        <a href="#work" class="icon solid fa-folder">
+            <span>Work</span>
+        </a>
+        <a href="#contact" class="icon solid fa-envelope">
+            <span>Contact</span>
+        </a>
+    </nav>
 
-        <p>
-            Reflecting on my own portfolio website, I realised that I face a similar design
-            challenge. I want to present a variety of information and eventually showcase my
-            work, but including too much content without clear priorities could make the
-            website difficult to navigate. Since I do not yet have many projects to display,
-            I would like to focus on communicating my personal style and interests first,
-            before gradually developing the portfolio section.
-        </p>
+    <!-- Main -->
+    <div id="main">
 
-        <p>
-            At the same time, I recognise that YouTube and a personal portfolio website serve
-            different purposes. YouTube needs to help users discover and watch a large amount
-            of video content, whereas a portfolio website should guide visitors towards the
-            information and work that best represent its creator. Therefore, good design does
-            not simply mean making a website more visually attractive or adding more content.
-            It means organising information in a way that supports the website's purpose and
-            helps users focus on what matters to them.
-        </p>
+        <!-- Home -->
+        <article id="home" class="panel intro">
+            <header>
+                <h1>Ke Shao</h1>
+                <p>Digital Media Student | Exploring Digital Culture</p>
+            </header>
 
-        <p>
-            <strong>Reading:</strong> Gillespie, T. (2013). “The Relevance of Algorithms.”
-            In T. Gillespie, P. J. Boczkowski, and K. A. Foot (eds.),
-            <em>Media Technologies: Essays on Communication, Materiality, and Society</em>,
-            pp. 167–193. MIT Press.
-        </p>
-    </section>
-</article>
-						<!-- Contact -->
-							<article id="contact" class="panel">
-								<header>
-									<h2>Contact Me</h2>
-								</header>
-								<form action="#" method="post">
-									<div>
-										<div class="row">
-											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<input type="submit" value="Send Message" />
-											</div>
-										</div>
-									</div>
-								</form>
-							</article>
+            <a href="#work" class="jumplink pic">
+                <span class="arrow icon solid fa-chevron-right">
+                    <span>See my work</span>
+                </span>
+                <img src="images/cat-profile.jpg"
+                     alt="A golden cat with green eyes" />
+            </a>
+        </article>
 
-					</div>
+        <!-- About Me -->
+        <article id="about" class="panel">
+            <header>
+                <h2>About Me</h2>
+            </header>
 
-				<!-- Footer -->
-					<div id="footer">
-						<ul class="copyright">
-							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
+            <h3>Introduction</h3>
+            <p>
+                I am a student exploring digital media and the role of
+                digital technologies in everyday life.
+            </p>
 
-			</div>
+            <h3>Academic Interests</h3>
+            <p>
+                I am interested in how digital platforms shape the ways
+                people communicate and interact.
+            </p>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+            <h3>Skills &amp; Exploration</h3>
+            <p>
+                Through this portfolio, I am developing my understanding
+                of website design and digital content.
+            </p>
 
-	</body>
+            <h3>Learning Goals</h3>
+            <p>
+                My goal is to develop my critical thinking skills and
+                connect theoretical ideas with everyday digital experiences.
+            </p>
+        </article>
+
+        <!-- Portfolio: reflections and tasks together -->
+        <article id="work" class="panel">
+            <header>
+                <h2>Portfolio</h2>
+            </header>
+
+            <p>
+                Welcome to my portfolio. This space documents my learning
+                journey in digital media, including workshop activities,
+                critical reflections, and creative experiments in website
+                design. Through these projects, I explore how digital
+                technologies shape everyday experiences.
+            </p>
+
+            <p>
+                Select an image or its title to explore the task or reflection.
+            </p>
+
+            <div id="portfolio-status"
+                 class="portfolio-status"
+                 role="status"
+                 aria-live="polite">
+                Loading portfolio items...
+            </div>
+
+            <section>
+                <div id="portfolio-grid" class="row"></div>
+            </section>
+        </article>
+
+        <!-- Contact -->
+        <article id="contact" class="panel">
+            <header>
+                <h2>Contact Me</h2>
+            </header>
+
+            <form action="#" method="post">
+                <div>
+                    <div class="row">
+                        <div class="col-6 col-12-medium">
+                            <input type="text"
+                                   name="name"
+                                   placeholder="Name" />
+                        </div>
+
+                        <div class="col-6 col-12-medium">
+                            <input type="text"
+                                   name="email"
+                                   placeholder="Email" />
+                        </div>
+
+                        <div class="col-12">
+                            <input type="text"
+                                   name="subject"
+                                   placeholder="Subject" />
+                        </div>
+
+                        <div class="col-12">
+                            <textarea name="message"
+                                      placeholder="Message"
+                                      rows="6"></textarea>
+                        </div>
+
+                        <div class="col-12">
+                            <input type="submit"
+                                   value="Send Message" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </article>
+
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <ul class="copyright">
+            <li>&copy; Ke Shao.</li>
+            <li>
+                Design:
+                <a href="https://html5up.net">HTML5 UP</a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+<!-- Dynamically load portfolio items from assets/work.json -->
+<script>
+(function () {
+    "use strict";
+
+    const grid = document.getElementById("portfolio-grid");
+    const status = document.getElementById("portfolio-status");
+
+    function escapeHtml(value) {
+        return String(value == null ? "" : value).replace(/[&<>"']/g,
+            function (char) {
+                return {
+                    "&": "&amp;",
+                    "<": "&lt;",
+                    ">": "&gt;",
+                    '"': "&quot;",
+                    "'": "&#39;"
+                }[char];
+            }
+        );
+    }
+
+    function createCard(item, index) {
+        const title = escapeHtml(
+            item.title || ("Portfolio item " + (index + 1))
+        );
+        const image = escapeHtml(item.image || "images/pic01.jpg");
+        const alt = escapeHtml(item.alt || item.title || "Portfolio work");
+        const contentPath = String(item.content || "");
+
+        const column = document.createElement("div");
+        column.className = "col-4 col-6-medium col-12-small";
+
+        column.innerHTML = `
+            <details class="work-card">
+                <summary class="work-card-preview">
+                    <img src="${image}" alt="${alt}" loading="lazy" />
+                    <span class="work-card-title">${title}</span>
+                </summary>
+                <div class="work-card-content">
+                    <p class="portfolio-status">Open to load content...</p>
+                </div>
+            </details>
+        `;
+
+        const details = column.querySelector("details");
+        const contentBox = column.querySelector(".work-card-content");
+        let loaded = false;
+        let loading = false;
+
+        details.addEventListener("toggle", async function () {
+            if (!details.open || loaded || loading) {
+                return;
+            }
+
+            if (!contentPath) {
+                contentBox.innerHTML =
+                    "<p>No content file has been set for this item yet. " +
+                    "Add its path in <code>assets/work.json</code>.</p>";
+                loaded = true;
+                return;
+            }
+
+            loading = true;
+            contentBox.innerHTML = "<p>Loading content...</p>";
+
+            try {
+                const response = await fetch(contentPath);
+
+                if (!response.ok) {
+                    throw new Error("HTTP " + response.status);
+                }
+
+                const html = await response.text();
+                contentBox.innerHTML = html;
+                loaded = true;
+            } catch (error) {
+                contentBox.innerHTML =
+                    "<p>Unable to load this content file. Please check that " +
+                    "<code>" + escapeHtml(contentPath) +
+                    "</code> exists in your GitHub repository and that the " +
+                    "path is correct.</p>";
+            } finally {
+                loading = false;
+            }
+        });
+
+        return column;
+    }
+
+    async function loadPortfolio() {
+        try {
+            const response = await fetch("assets/work.json");
+
+            if (!response.ok) {
+                throw new Error("Could not load assets/work.json");
+            }
+
+            const items = await response.json();
+
+            if (!Array.isArray(items) || items.length === 0) {
+                status.textContent =
+                    "No portfolio items found. Add entries to assets/work.json.";
+                return;
+            }
+
+            items.forEach(function (item, index) {
+                grid.appendChild(createCard(item, index));
+            });
+
+            status.hidden = true;
+        } catch (error) {
+            status.textContent =
+                "Portfolio items could not be loaded. Please make sure " +
+                "assets/work.json has been uploaded and contains valid JSON. " +
+                "Test the page through GitHub Pages.";
+        }
+    }
+
+    loadPortfolio();
+})();
+</script>
+
+</body>
 </html>
+
