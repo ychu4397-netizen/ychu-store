@@ -1,0 +1,17 @@
+<h3>Week 2 – Creating Websites: Analysing YouTube's User Experience</h3>
+
+<p>One website I use regularly is YouTube. In my experience, one of its main strengths is its search functionality. Keyword suggestions make it easier to find relevant videos, even when I do not know their exact titles. The website also presents video lists, titles and comments in a familiar format, helping users explore content and interact with others.</p>
+
+<p>However, I sometimes find YouTube's interface visually overwhelming. As a video-sharing platform, it presents a large amount of content through thumbnails, titles and recommendations. Many thumbnails use striking images and colours to attract attention. Although this can make videos more noticeable, it can also distract users from their original goals. For example, someone who visits YouTube to find a particular educational video may become interested in unrelated recommendations.</p>
+
+<p>This made me think about the relationship between visual design and usability. A website can provide a great deal of information, but more content does not necessarily create a better user experience. I think effective design needs a clear visual hierarchy so that users can identify important information and understand where to go next. Attractiveness matters, but it should support the purpose of a website rather than compete with it.</p>
+
+<p>The workshop's introduction to HTML and CSS helped me consider websites as constructed objects rather than finished products that simply appear on a screen. HTML organises the content and structure of a page, while CSS controls how that content is presented. Understanding this distinction has helped me recognise that the appearance and usability of a website are shaped by design decisions rather than being automatic features of the internet.</p>
+
+<p>This observation also connects to Gillespie's (2013) discussion of the relevance of algorithms. Search suggestions and recommendations influence which information users encounter and how they discover it. These features can make a platform convenient, but they also help organise users' attention. What appears relevant is not simply a natural reflection of all available information; it is shaped by systems that select and present particular results.</p>
+
+<p>Reflecting on my own portfolio website, I realised that I face a similar design challenge. I want to include workshop tasks, weekly reflections and other learning materials, but presenting everything without a clear structure could make the website difficult to navigate. Organising the work into labelled cards, with titles beneath the images and expandable content, is one way to make the information easier to browse while keeping the page visually organised.</p>
+
+<p>Overall, this week has encouraged me to think about website design as both a technical and a communicative practice. Building a website involves more than writing code or choosing attractive images. It also requires decisions about structure, visibility and the user's journey through information. As I continue developing my portfolio, I want to consider not only whether a feature works, but also how it shapes the experience of someone visiting the site.</p>
+
+<p class="reading"><strong>Reading:</strong> Gillespie, T. (2013). “The Relevance of Algorithms.” In T. Gillespie, P. J. Boczkowski, and K. A. Foot (eds.), <em>Media Technologies: Essays on Communication, Materiality, and Society</em>, pp. 167–193. Cambridge, MA: MIT Press.</p>
