@@ -1,3 +1,4 @@
+
 [
   {
     "title": "Week 2 – Analysing YouTube's User Experience",
@@ -19,5 +20,12 @@
     "alt": "Week 3 reflection",
     "type": "reflection",
     "content": "assets/reflections/week-03.html"
+  },
+  {
+    "title": "Week 4 – Dataset Project",
+    "image": "images/pic04.jpg",
+    "alt": "Week 4 dataset project",
+    "type": "dataset",
+    "content": "assets/reflection/dataset.html"
   }
 ]
